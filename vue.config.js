@@ -32,6 +32,10 @@ module.exports = {
       ]
     }
   },
+  css: {
+    // Enable CSS source maps.
+    sourceMap: true,
+  },
   chainWebpack: config => {
     config.module.rule('eslint').use('eslint-loader').options({
       fix: true
