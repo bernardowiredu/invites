@@ -1,0 +1,9 @@
+// resolving alias
+// resolve: {
+//   alias: {
+//     Routes: path.resolve(__dirname, './src/routes'),
+//     Views: path.resolve(__dirname, './src/views'),
+//     '*': path.resolve(__dirname, './src/styles'),
+//     Components: path.resolve(__dirname, './src/components')
+//   }
+// }
