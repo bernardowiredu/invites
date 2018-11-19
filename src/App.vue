@@ -6,6 +6,7 @@
             <ul class="uk-navbar-nav uk-padding-left">
                 <li class="uk-active"><router-link to="/">Home</router-link><li>
                 <li><router-link to="/about">ABOUT</router-link></li>
+                <li><router-link to="/settings">SETTINGS</router-link></li>
             </ul>
 
         </div>
