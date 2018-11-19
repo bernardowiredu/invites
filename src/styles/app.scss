@@ -1,4 +1,20 @@
+//general css variables
 @import 'general/variables';
+@import 'general/element_variables';
+@import 'general/colors';
+@import 'general/main';
+
+//component scss variables
+@import 'components/mfb';
+@import 'components/navbar';
+@import 'components/sidebar';
+
+//views scss variables
+@import 'views/dashboard';
+@import 'views/events';
+@import 'views/misc';
+
+//main css 
 @import '~uikit/src/scss/site.scss';
 @import '~iview/dist/styles/iview.css';
-@import 'general/element_variables';
+
