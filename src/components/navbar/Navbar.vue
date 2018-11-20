@@ -1,6 +1,6 @@
 <template>
   <div>
-       <div uk-sticky="sel-target: .uk-con; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" class="uk-visible@m">
+       <div uk-sticky="sel-target: .uk-con; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" class="uk-visible@s">
         <nav class="uk-navbar-container uk-con" uk-navbar="mode: click">
             <div class="uk-navbar-left">
                  <a class="uk-navbar-item uk-logo uk-text-default uk-text-big" href="#">{{title}} </a>
@@ -53,9 +53,8 @@
   </div>
 </template>
 <script>
-import '@/styles/pages/navbar.scss'
 export default {
-  name: 'Navbar.vue',
+  name: 'Navbar',
   props: {
     title: String
   },
@@ -71,6 +70,51 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
-
+<style scoped>
+  .uk-navbar{
+        background: #ffffff;
+        padding-left:20px;
+        padding-right:20px;
+    }
+    @media only screen and (max-width: 600px) {
+        .uk-navbar {
+            padding-left: 10px;
+            padding-right:15px;
+        }
+    }
+    .uk-text-default{
+        color: #515a6e;
+    }
+    .uk-nav-default li a{
+        display:block;
+        padding-bottom:15px;
+    }
+    .uk-navbar-dropdown{
+        border-radius:5px;
+    }
+    .uk-parent a, .ps a{
+        color:#17233d;
+    }
+    .uk-list .uk-list-divider{
+        border-bottom:1px solid #f9f9f9;
+    }
+     .navigation-header{
+        margin:0;
+        padding-bottom:10px;
+    }
+    .uk-text-big{
+        font-size:26px;
+        color:#515a6e;
+    }
+    .uk-no-border{
+        border:none;
+    }
+    .btn-primary-transparent{
+         background: #55A4EB;
+         color: #ffffff;
+         font-weight: 500
+    }
+    .btn-primary-transparent:hover{
+        background: #7bbdf7;
+    }
 </style>
