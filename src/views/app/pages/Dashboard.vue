@@ -1,10 +1,16 @@
 <template>
-    $END$
+    <div>
+        <Sidebar></Sidebar>
+    </div>
 </template>
 
 <script>
+    import Sidebar from '@/components/layouts/sidebar/Sidebar.vue'
     export default {
-        name: "dashboard"
+        name: "dashboard",
+        components: {
+            Sidebar
+        }
     }
 </script>
 

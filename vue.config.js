@@ -36,7 +36,7 @@ module.exports = {
 
   css: {
     // Enable CSS source maps.
-    sourceMap: true,
+    sourceMap: true
   },
 
   chainWebpack: config => {
