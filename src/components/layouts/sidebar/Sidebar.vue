@@ -6,13 +6,12 @@
             </div>
              <nav>
                  <!--sidebar links-->
-                 <sidelinks :barlinks="sidebarlinks" size="24"></sidelinks>
+                 <sidelinks :barlinks="sidebarlinks" size="25"></sidelinks>
                  <!--bottom links-->
                  <div class="bottom-links">
-                     <p class="subscribed uk-text-primary"><Icon  class="icon-placement" type="md-person" size="14"/> Subscribed user</p>
-                     <hr>
-                     <li>
-                         <a href="#modal-center" uk-toggle><Icon class="icon-placement" type="md-person" size="17" /> Personal Plan <!-- <span class="uk-float-right" type="button"><Icon type="ios-arrow-forward" /></span> --></a>
+                     <hr style="padding:10px;">
+                     <li class="padding-top-xsmall">
+                         <a href="#modal-center" uk-toggle> Personal Plan <span class="uk-float-right" style="padding-right:25px;"><Icon type="ios-arrow-forward" /></span></a>
                          <span class="funds">Balance 0.00 <span class="uk-text-right uk-text-primary">&emsp;&emsp; Add funds</span></span>
                      </li>
                  </div>

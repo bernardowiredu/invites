@@ -1,9 +1,9 @@
 <template>
     <div>
-       <li v-for="(barlink, index) in barlinks" :key="index">
+       <li v-for="(barlink, index) in barlinks" :key="index" :class="{active: barlink.path === link}">
            <router-link :to="barlink.path">
                <Icon class="icon-placement" :type="barlink.icon" :size="size" />
-              <span :class="{active: barlink.path === link}">{{barlink.name}}</span>
+               <span>{{barlink.name}}</span>
            </router-link>
        </li>
     </div>
@@ -28,9 +28,18 @@
     .icon-placement{
         margin-bottom:5px;
         padding-right:10px;
-        color:#515a6e; /*#c1c1c1 */
+        color:#bababa;
     }
     .active{
-        color: #000;
+        background: #F9FAFB;
+        border-left:4px solid #3183C8;
+        color:#000;
+    }
+    .uk-badge{
+      background:#3BC881;
+      padding:5px;
+      margin-top:3px;
+      color:#fff;
+      font-size:12px;
     }
 </style>

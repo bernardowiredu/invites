@@ -14,9 +14,7 @@ aside {
 aside .logo a{
     display:block;
     padding: 10px 5px 10px 50px;
-    background: #00c6ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #619fe8, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #619fe8, #00c6ff);
+    background:#3183C8;  /* fallback for old browsers */
     top:0;
     left:0;
 }
@@ -34,6 +32,7 @@ aside nav li a {
     padding: 10px 30px 10px 30px;
     font-size:14px;
     line-height: 1.4rem;
+    border-bottom: 1px solid #f9f9f9
    // font-family: 'barlow', sans-serif;
 }
 aside nav li a:hover{
@@ -98,7 +97,7 @@ aside nav li:hover .submenu{
 }
 
 .funds{
-    padding-left:40px;
+    padding-left:30px;
     color:#A6A6A6;
 }
 
