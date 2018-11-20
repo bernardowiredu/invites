@@ -1,5 +1,5 @@
 import app from '@/routes/app'
-import sidelinks from '@/routes/app/sidelinks'
+import sidelinks from '@/routes/app/sidebarlinks'
 
 let routeFiles = []
 
