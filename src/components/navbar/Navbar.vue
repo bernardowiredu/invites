@@ -104,7 +104,7 @@ export default {
     }
     .uk-text-big{
         font-size:26px;
-        color:#515a6e;
+        color:#11253E;
     }
     .uk-no-border{
         border:none;
