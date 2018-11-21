@@ -32,8 +32,8 @@
     }
     .active{
         background: #F9FAFB;
-        border-left:4px solid #3183C8;
         color:#000;
+        transition: all 1s;
     }
     .uk-badge{
       background:#3BC881;
