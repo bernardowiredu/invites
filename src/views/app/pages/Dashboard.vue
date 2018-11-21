@@ -14,7 +14,13 @@
 
             <!-- main-content -->
              <div class="bs-content-wrapper">
-               <p>Hello this is content</p>
+                   <NullData
+                    image="wedding-invitation"
+                    title="No Invitation have been created"
+                    message="Create and invite friends or contacs to your events without hassle"
+                    url="/events"
+                    label="Create a new invitation"
+                  ></NullData>
              </div>
          </div>
        </div>
@@ -25,10 +31,16 @@
     import Sidebar from '@/components/layouts/sidebar/Sidebar.vue'
     import Navbar from '@/components/navbar/Navbar.vue'
     import MobileNav from '@/components/navbar/MobileNav.vue'
+    import NullData from '@/views/app/helpers/NullData.vue'
     export default {
         name: "dashboard",
         components: {
-            Sidebar, Navbar, MobileNav
+            Sidebar, Navbar, MobileNav, NullData
+        },
+        data(){
+          return{
+             name: 'Bernard'
+          }
         }
     }
 </script>
