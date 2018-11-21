@@ -36,9 +36,9 @@
     border:none
  }
  .uk-text-strong{
-   font-weight:600;
+   font-weight:500;
    color:#11253E;
-   font-size:17px;
+   font-size:18px;
   }
   .small-heading{
     font-weight: bold;
