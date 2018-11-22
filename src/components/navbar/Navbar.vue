@@ -83,7 +83,7 @@ export default {
         }
     }
     .uk-text-default{
-        color: #515a6e;
+        color: #11253E;
     }
     .uk-nav-default li a{
         display:block;
@@ -93,7 +93,7 @@ export default {
         border-radius:5px;
     }
     .uk-parent a, .ps a{
-        color:#17233d;
+        color:#11253E;
     }
     .uk-list .uk-list-divider{
         border-bottom:1px solid #f9f9f9;
@@ -104,7 +104,7 @@ export default {
     }
     .uk-text-big{
         font-size:26px;
-        color:#515a6e;
+        color:#11253E;
     }
     .uk-no-border{
         border:none;

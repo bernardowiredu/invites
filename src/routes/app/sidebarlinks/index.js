@@ -1,5 +1,5 @@
 import Contacts from '@/views/app/pages/Contacts.vue'
-import Dashboard from '@/views/app/pages/Dashboard.vue'
+import Dashboard from '@/views/app/pages/Dashboard/Dashboard.vue'
 import Events from '@/views/app/pages/Events.vue'
 import Groups from '@/views/app/pages/Groups.vue'
 import Payments from '@/views/app/pages/Payments.vue'
