@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div style="padding-top:15px;" class="uk-grid-small uk-child-width-expand@s" uk-grid>
+      <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
         <div>
            <vue-content-loading :width="200" :height="100">
               <rect x="5" y="36.39" rx="4" ry="4" width="112.76" height="4.1" />
@@ -42,6 +42,28 @@
           </vue-content-loading>
         </div>
       </div>
+
+        <div class="uk-grid-small uk-grid-match uk-child-width-expand@s" uk-grid>
+          <div>
+             <vue-content-loading :width="370" :height="100">
+                <rect x="2.13" y="1.67" rx="0" ry="0" width="402" height="149" />
+             </vue-content-loading>
+          </div>
+        </div>
+        <br>
+        <div class="uk-grid-small uk-grid-match uk-child-width-expand@s" uk-grid>
+          <div>
+             <vue-content-loading :width="320" :height="100">
+                <rect x="2.13" y="1.67" rx="0" ry="0" width="402" height="149" />
+             </vue-content-loading>
+          </div>
+           <div>
+             <vue-content-loading :width="320" :height="100">
+                <rect x="2.13" y="1.67" rx="0" ry="0" width="402" height="149" />
+             </vue-content-loading>
+          </div>
+        </div>
+        <br>
   </div>
 </template>
 <script>
