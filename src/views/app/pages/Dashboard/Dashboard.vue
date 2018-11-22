@@ -22,7 +22,7 @@
                   ></NullData>
             <!-- main-content -->
              <div class="bs-content-wrapper">
-                  <Summaries></Summaries>
+                  <!-- <Summaries></Summaries> -->
                   <Placeholder></Placeholder>
              </div>
          </div>
@@ -35,12 +35,12 @@
     import Navbar from '@/components/navbar/Navbar.vue'
     import MobileNav from '@/components/navbar/MobileNav.vue'
     import NullData from '@/views/app/helpers/NullData.vue'
-    import Summaries from '@/views/app/pages/Dashboard/Summaries/Summaries.vue'
+    // import Summaries from '@/views/app/pages/Dashboard/Summaries/Summaries.vue'
     import Placeholder from '@/views/app/helpers/Placeholder.vue'
     export default {
         name: "dashboard",
         components: {
-            Sidebar, Navbar, MobileNav, NullData, Summaries, Placeholder
+            Sidebar, Navbar, MobileNav, NullData, Placeholder
         },
         data(){
           return{
