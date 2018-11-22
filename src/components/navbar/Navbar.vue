@@ -1,7 +1,7 @@
 <template>
   <div>
        <div uk-sticky="sel-target: .uk-con; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" class="uk-visible@s">
-        <nav class="uk-navbar-container uk-con" uk-navbar="mode: click">
+        <nav class="uk-navbar-container uk-box-shadow-small uk-con" uk-navbar="mode: click">
             <div class="uk-navbar-left">
                  <a class="uk-navbar-item uk-logo uk-text-default uk-text-big" href="#">{{title}} </a>
             </div>
