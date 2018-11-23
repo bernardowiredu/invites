@@ -10,8 +10,8 @@
                  <!--bottom links-->
                  <div class="bottom-links">
                      <hr style="padding:10px;">
-                         <a href="#modal-center" uk-toggle> Personal Plan <span class="uk-float-right" style="padding-right:25px;"><Icon type="ios-arrow-forward" /></span></a>
                      <li class="padding-top-xsmall">
+                         <a href="#modal-center" uk-toggle> Personal Plan <span class="uk-float-right" style="padding-right:25px;"><Icon type="ios-arrow-forward" /></span></a>
                          <span class="funds">Balance 0.00 <span class="uk-text-right uk-text-primary">&emsp;&emsp; Add funds</span></span>
                      </li>
                  </div>

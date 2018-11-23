@@ -4,7 +4,7 @@
           <div>
               <Summary
                 name="INVITATIONS SENT"
-                value=456
+                value="456"
                 icon="ios-paper-plane"
                 color="#32D5AA"
                 interpret="600 invitation has been sent this month"
@@ -13,7 +13,7 @@
           <div>
               <Summary
                 name="INVITEES ATTENDING"
-                value=300
+                value="300"
                 icon="ios-paper"
                 color="#48b0f7"
                 interpret="724 invitation has been sent this month"
@@ -22,7 +22,7 @@
           <div>
               <Summary
                 name="TOTAL VIEWS"
-                value=432
+                value="432"
                 icon="ios-eye"
                 color="#926dde"
                 interpret="724 invitation has been sent this month"
@@ -31,7 +31,7 @@
           <div>
               <Summary
                 name="AMOUNT SPENT"
-                value=54
+                value="GHS 54"
                 icon="ios-card"
                 color="#f96868"
                 interpret="600 invitation has been sent this month"

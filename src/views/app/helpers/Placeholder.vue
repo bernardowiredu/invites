@@ -53,12 +53,12 @@
         <br>
         <div class="uk-grid-small uk-grid-match uk-child-width-expand@s" uk-grid>
           <div>
-             <vue-content-loading :width="320" :height="100">
+             <vue-content-loading :width="320" :height="140">
                 <rect x="2.13" y="1.67" rx="0" ry="0" width="402" height="149" />
              </vue-content-loading>
           </div>
            <div>
-             <vue-content-loading :width="320" :height="100">
+             <vue-content-loading :width="320" :height="140">
                 <rect x="2.13" y="1.67" rx="0" ry="0" width="402" height="149" />
              </vue-content-loading>
           </div>
