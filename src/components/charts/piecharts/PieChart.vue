@@ -19,7 +19,7 @@
                     maintainAspectRatio: false,
                     legend: {
                         display: true,
-                        position: 'top',
+                        position: 'bottom',
                         labels: {
                             fontFamily: "'Roboto'",
                             boxWidth: 10
