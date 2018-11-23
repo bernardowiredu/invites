@@ -19,9 +19,10 @@
                     maintainAspectRatio: false,
                     legend: {
                         display: true,
-                        position: 'right',
+                        position: 'top',
                         labels: {
-                            fontFamily: "'Roboto', 'Helvetica Neue', 'Arial', sans-serif,"
+                            fontFamily: "'Roboto'",
+                            boxWidth: 10
                         }
                     }
                 }

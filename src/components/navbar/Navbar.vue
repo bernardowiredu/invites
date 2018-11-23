@@ -9,7 +9,7 @@
                 <ul class="uk-navbar-nav">
                     <div class="uk-navbar-item">
                       <el-dropdown @command="handleCommand">
-                        <el-button type="default">
+                        <el-button type="primary">
                            Create invite<i class="el-icon-arrow-down el-icon--right"></i>
                         </el-button>
                         <el-dropdown-menu slot="dropdown">

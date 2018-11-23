@@ -11,7 +11,10 @@ aside {
 aside .logo a{
     display:block;
     padding: 10px 5px 10px 50px;
-    background:linear-gradient(135deg,#40E495,#30DD8A,#2BB673); //
+    //background:linear-gradient(135deg,#40E495,#30DD8A,#2BB673); //
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #619fe8, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #619fe8, #00c6ff);
     top:0;
     left:0;
 }

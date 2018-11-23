@@ -48,9 +48,9 @@
                     datasets: [
                         {
                             label: 'Event Attendees',
-                            backgroundColor: 'rgba(47,205,88,0.25)',//#619fe8
+                            backgroundColor: '#FCCD58',
                             pointBackgroundColor:'#2FD283',
-                            borderColor:'#2FD283',
+                            // borderColor:'#FCCD58',
                             data: [40, 23, 34, 15, 45, 28, 30, 5, 20]
                         }
                     ]
