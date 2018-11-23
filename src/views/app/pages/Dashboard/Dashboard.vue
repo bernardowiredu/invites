@@ -23,16 +23,20 @@
             <!-- main-content -->
              <div class="bs-content-wrapper">
                  <transition name="fade">
-                     <Placeholder v-if="!myData"></Placeholder>
-                     <Summaries v-else></Summaries>
-                 </transition>
-                 <br>
-                 <div class="uk-flex uk-flex-left">
-                     <div><h4 class="uk-text-strong padding-bottom-small">Overview </h4></div>
-                 </div>
-                 <EventAnalytics></EventAnalytics>
-                 <br>
-                 <h4 class="uk-text-strong padding-bottom-small">Invite Feedbacks</h4>
+                  <div v-if="!myData">
+                     <Placeholder></Placeholder>
+                  </div>
+                  <div v-else>
+                     <Summaries></Summaries>
+                     <br>
+                     <div class="uk-flex uk-flex-left">
+                         <div><h4 class="uk-text-strong padding-bottom-small">Overview </h4></div>
+                     </div>
+                     <EventAnalytics></EventAnalytics>
+                     <br>
+                     <h4 class="uk-text-strong padding-bottom-small">Invite Feedbacks</h4>
+                  </div>
+                  </transition>
              </div>
          </div>
        </div>

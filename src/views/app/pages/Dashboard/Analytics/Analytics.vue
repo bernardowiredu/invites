@@ -5,14 +5,14 @@
                 <div class="uk-section uk-padding-small">
                     <div class="uk-flex uk-flex-center uk-flex-between padding-bottom-small">
                         <div>
-                            <h5 class="padding-left-small padding-top-small" style="font-size: 16px;">Total Views</h5>
+                            <h5 class="padding-left-small small-heading padding-top-small" style="font-size: 16px;">Total Views</h5>
                         </div>
                         <div>
-                            <Select v-model="model2" style="width:100px; padding-right:5px;">
+                            <Select v-model="model2" style="width:150px; padding-right:5px;" placeholder="Select event">
                                 <Option v-for="item in events" :value="item.value" :key="item.value">{{ item.label }}</Option>
                             </Select>
 
-                            <Select v-model="model2" style="width:100px; padding-right:5px;">
+                            <Select v-model="model2" style="width:100px; padding-right:5px;" placeholder="Period">
                                 <Option v-for="item in days" :value="item.value" :key="item.value">{{ item.label }}</Option>
                             </Select>
                         </div>
@@ -22,10 +22,15 @@
             </div>
             <div class="uk-width-medium@s">
                 <div class="uk-section-small uk-padding-small">
-                    <div class="uk-flex uk-flex-right padding-bottom-small">
-                        <Tooltip content="Active Event" placement="top-start">
+                    <div class="uk-flex uk-flex-center uk-flex-between padding-bottom-small">
+                      <div>
+                          <h5 class="padding-left-small small-heading padding-top-small" style="font-size: 16px;">Feedbacks</h5>
+                      </div>
+                      <div>
+                       <Tooltip content="Active Event" placement="top-start">
                             <Tag type="dot"  color="success"><span class="uk-text-muted">Current event: </span> Event 3</Tag>
                         </Tooltip>
+                      </div>
                     </div>
                     <PieChart></PieChart>
                 </div>
@@ -88,5 +93,8 @@
     font-size:13px;
 }
 .uk-no-border{
+}
+.small-heading{
+   font-weight:500;
 }
 </style>
