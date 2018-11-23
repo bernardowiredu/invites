@@ -59,4 +59,7 @@
   .uk-text-name{
     font-size:14px;
   }
+  .uk-border-radius{
+    border-radius:7px;
+  }
 </style>

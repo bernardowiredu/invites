@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
+      <div class="uk-grid-small uk-child-width-expand@s" style="margin-top:-10px;" uk-grid>
         <div>
            <vue-content-loading :width="200" :height="100">
               <rect x="5" y="36.39" rx="4" ry="4" width="112.76" height="4.1" />

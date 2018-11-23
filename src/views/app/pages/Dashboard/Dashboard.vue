@@ -34,7 +34,8 @@
                      </div>
                      <EventAnalytics></EventAnalytics>
                      <br>
-                     <h4 class="uk-text-strong padding-bottom-small">Invite Feedbacks</h4>
+                     <h4 class="uk-text-strong padding-bottom-small">Event Updates</h4>
+                      <Tables></Tables><br>
                   </div>
                   </transition>
              </div>
@@ -51,10 +52,11 @@
     import Summaries from '@/views/app/pages/Dashboard/Summaries/Summaries.vue'
     import Placeholder from '@/views/app/helpers/Placeholder.vue'
     import EventAnalytics from '@/views/app/pages/Dashboard/Analytics/Analytics.vue'
+    import Tables from '@/views/app/pages/Dashboard/tables/Tables.vue'
     export default {
         name: "dashboard",
         components: {
-            Sidebar, Navbar, MobileNav, Summaries, Placeholder, EventAnalytics
+            Sidebar, Navbar, MobileNav, Summaries, Placeholder, EventAnalytics,Tables
         },
         data(){
           return{

@@ -22,7 +22,7 @@
                         position: 'bottom',
                         labels: {
                             fontFamily: "'Roboto'",
-                            boxWidth: 10
+                            boxWidth: 14
                         }
                     }
                 }

@@ -2,7 +2,7 @@
     <div>
         <div class="uk-grid-small uk-grid-match uk-child-width-expand@s" uk-grid>
             <div>
-                <div class="uk-section uk-padding-small">
+                <div class="uk-section  uk-border-radius uk-padding-small">
                     <div class="uk-flex uk-flex-center uk-flex-between padding-bottom-small">
                         <div>
                             <h5 class="padding-left-small small-heading padding-top-small" style="font-size: 16px;">Total Views</h5>
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="uk-width-medium@s">
-                <div class="uk-section-small uk-padding-small">
+                <div class="uk-section-small uk-border-radius uk-padding-small">
                     <div class="uk-flex uk-flex-center uk-flex-between padding-bottom-small">
                       <div>
                           <h5 class="padding-left-small small-heading padding-top-small" style="font-size: 16px;">Feedbacks</h5>
@@ -33,6 +33,10 @@
                       </div>
                     </div>
                     <PieChart></PieChart>
+                    <hr style="border:1px solid #f6f6f6">
+                    <p class="uk-text-muted padding-top-small" style="padding:10px;">
+                        <Icon type="md-bulb" color="#619FE8" class="icon-placement" size="20"/> Your current event has more than one default information
+                    </p>
                 </div>
             </div>
         </div>
@@ -96,5 +100,11 @@
 }
 .small-heading{
    font-weight:500;
+}
+.icon-placement{
+   margin-top: -5px;
+}
+.uk-border-radius{
+    border-radius:7px;
 }
 </style>
