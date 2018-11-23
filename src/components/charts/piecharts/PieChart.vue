@@ -18,8 +18,8 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     legend: {
-                        display: false,
-                        position: 'bottom',
+                        display: true,
+                        position: 'right',
                         labels: {
                             fontFamily: "'Roboto', 'Helvetica Neue', 'Arial', sans-serif,"
                         }
@@ -33,16 +33,16 @@
         methods: {
             fillData() {
                 this.datacollection = {
-                    labels: ['Attending', 'Not Attending'],
+                    labels: ['Invited', 'Views', 'Attending'],
                     datasets: [
                         {
                             label: 'Event Attendees',
                             backgroundColor: [
-                                'rgba(97, 159, 232, 0.3)',
+                                'rgb(97, 159, 232)',
                                 '#2CBC76'
                             ],
                             fontFamily: '"Roboto", sans serif',
-                            data: [40, 60]
+                            data: [23, 47, 30]
                         }
                     ]
 
