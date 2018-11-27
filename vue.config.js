@@ -27,7 +27,7 @@ module.exports = {
             sortAttributes: true
           },
           renderer: new Renderer({
-            renderAfterTime: '5000'
+            renderAfterTime: '2000'
           })
         })
       ]
