@@ -1,62 +1,38 @@
 <template>
     <div>
-       <div class="bs-wrapper">
-        <!-- sidebar -->
-         <div class="uk-visible@l">
-            <Sidebar></Sidebar>
-         </div>
-         <!-- content holder -->
-         <div class="bs-content">
-            <!-- navbar -->
-            <Navbar title="Dashboard"></Navbar>
-            <!-- mobile nav -->
-            <MobileNav title="Dashboard"></MobileNav>
-              <!-- if data empty -->
+       <Layout name="Dashboard">
+           <transition name="fade">
+               <div v-if="!myData">
+                   <Placeholder></Placeholder>
+               </div>
+               <div v-else>
 
-               <!--<NullData-->
-                    <!--image="wedding-invitation"-->
-                    <!--title="No Invitation have been created"-->
-                    <!--message="Create and invite friends or contacs to your events without hassle"-->
-                    <!--url="/events"-->
-                    <!--label="Create a new invitation"-->
-                  <!--&gt;</NullData>-->
-            <!-- main-content -->
-             <div class="bs-content-wrapper">
-                 <transition name="fade">
-                  <div v-if="!myData">
-                     <Placeholder></Placeholder>
-                  </div>
-                  <div v-else>
-                     <Summaries></Summaries>
-                     <br>
-                     <div class="uk-flex uk-flex-left">
-                         <div><h4 class="uk-text-strong padding-bottom-small">Overview </h4></div>
-                     </div>
-                     <EventAnalytics></EventAnalytics>
-                     <br>
-                     <h4 class="uk-text-strong padding-bottom-small">Event Updates</h4>
-                      <Tables></Tables><br>
-                  </div>
-                  </transition>
-             </div>
-         </div>
-       </div>
+                   <Summaries></Summaries>
+                   <br>
+                   <div class="uk-flex uk-flex-left">
+                       <div><h4 class="uk-text-strong padding-bottom-small">Overview </h4></div>
+                   </div>
+                   <EventAnalytics></EventAnalytics>
+                   <br>
+                   <h4 class="uk-text-strong padding-bottom-small">Event Updates</h4>
+                   <Tables></Tables><br>
+               </div>
+           </transition>
+       </Layout>
     </div>
 </template>
 
 <script>
-    import Sidebar from '@/components/layouts/sidebar/Sidebar.vue'
-    import Navbar from '@/components/navbar/Navbar.vue'
-    import MobileNav from '@/components/navbar/MobileNav.vue'
-    //import NullData from '@/views/app/helpers/NullData.vue'
     import Summaries from '@/views/app/pages/Dashboard/Summaries/Summaries.vue'
     import Placeholder from '@/views/app/helpers/Placeholder.vue'
     import EventAnalytics from '@/views/app/pages/Dashboard/Analytics/Analytics.vue'
     import Tables from '@/views/app/pages/Dashboard/tables/Tables.vue'
+    import Layout from '@/views/app/BaseLayout/Layout.vue'
+
     export default {
         name: "dashboard",
         components: {
-            Sidebar, Navbar, MobileNav, Summaries, Placeholder, EventAnalytics,Tables
+             Summaries, Placeholder, EventAnalytics,Tables,Layout
         },
         data(){
           return{
@@ -68,7 +44,7 @@
             //For Demo purposes
             setTimeout(() => {
                this.myData = "sample data"
-            }, 5000)
+            }, 3000)
 
             this.$Message.info('Data loaded');
         }

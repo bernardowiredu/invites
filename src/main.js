@@ -14,6 +14,7 @@ import Icons from 'uikit/dist/js/uikit-icons'
 import '@/styles/base.less'
 
 require('./bootstrap')
+Vue.use(require('vue-moment'))
 
 UIkit.use(Icons)
 Vue.use(ElementUI)

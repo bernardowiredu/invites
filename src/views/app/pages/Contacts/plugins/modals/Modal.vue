@@ -7,6 +7,7 @@
                     <h5 class="uk-modal-title">Add Contact</h5>
                 </div>
                 <div class="uk-modal-body">
+                    {{value1}}
                     <Form label-position="top">
                         <FormItem label="Name">
                             <Input v-model="value1" size="large" placeholder="Enter Contact Name..."/>

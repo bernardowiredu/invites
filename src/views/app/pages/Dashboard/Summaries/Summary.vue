@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="uk-card-small uk-border-radius uk-card-body uk-box-shadow-hover-small">
+    <div class="uk-card-small uk-border-radius uk-card-body uk-box-shadow-small">
       <div class="uk-flex uk-flex-center uk-flex-between padding-xxsmall">
           <div>
             <h6 class="uk-text-strong uk-text-name">{{name}}</h6>
               <span class="uk-text-large padding-bottom-small uk-text-muted">{{value}}</span>
           </div>
-          <div>
-            <Icon :type="icon" :color="color" size="50"/>
+          <div class="padding-top-medium">
+              <span style="font-size:50px;">{{icon}}</span>
           </div>
       </div>
       <hr style="border:1px solid #f9f9f9;">

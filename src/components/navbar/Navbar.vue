@@ -1,17 +1,17 @@
 <template>
   <div>
        <div uk-sticky="sel-target: .uk-con; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar" class="uk-visible@s">
-        <nav class="uk-navbar-container uk-box-shadow-small uk-con" uk-navbar="mode: click">
+        <nav class="uk-navbar-container uk-con" uk-navbar="mode: click">
             <div class="uk-navbar-left">
                  <a class="uk-navbar-item uk-logo uk-text-default uk-text-big" href="#">{{title}} </a>
             </div>
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
                     <div class="uk-navbar-item">
-                      <el-dropdown @command="handleCommand">
-                        <el-button type="primary">
-                           Create invite<i class="el-icon-arrow-down el-icon--right"></i>
-                        </el-button>
+                      <el-dropdown @command="handleCommand" trigger="click">
+                        <Button class="create-btn" size="large">
+                           Create invite <Icon type="ios-arrow-down" />
+                        </Button>
                         <el-dropdown-menu slot="dropdown">
                             <el-dropdown-item command="sms">SMS/Email invitation</el-dropdown-item>
                             <el-dropdown-item command="voice">Voice Invitation</el-dropdown-item>
@@ -19,21 +19,35 @@
                         </el-dropdown>
                     </div>
                     <li>
-                        <a hre="#">
+                        <a href="#offcanvas-usage" uk-toggle>
                             <Badge dot>
-                                <Icon type="md-notifications" size="30" color="#515a6e"/>
+                                <Icon type="md-notifications" size="30" color="#ffac33"/>
                             </Badge>
                         </a>
-                         <div class="uk-navbar-dropdown" style="width:350px;">
-                            <ul class="uk-nav uk-navbar-dropdown-nav uk-list uk-list-divider" >
-                                <li class="uk-active"><a href="#">Notification access can be used to display </a></li>
-                                <li><router-link to="/notification">We have added phone calls to the delivery option</router-link></li>
-                            </ul>
+                        <div id="offcanvas-usage" uk-offcanvas="flip: true;">
+                            <div class="uk-offcanvas-bar uk-box-shadow-small">
+                                 <h4 class="notify-heading">🔔 Notifications <span class="uk-float-right" style="padding-top:-15px;"><button class="uk-offcanvas-close" type="button" uk-close></button></span></h4>
+                                <hr>
+                                <div class="notify-body">
+                                    <p class="notify-title">🎉 New Announcement 🎉</p>
+                                    <p class="notify-message">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                                <div class="notify-body">
+                                    <p class="notify-title">🎉 New Announcement 🎉</p>
+                                    <p class="notify-message uk-text-muted">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <a href="#"> <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWAuvzXwqTcjTXDTQ6Q4155zQA6-IPwxR7SUVqxseWb5nsMo-" size="large" />
-                            <Icon type="md-arrow-dropdown" color="#515a6e"/>
+                            <Icon type="md-arrow-dropdown" color="#ffffff"/>
                         </a>
                         <div class="uk-navbar-dropdown" style="background:white">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -56,7 +70,10 @@
 export default {
   name: 'Navbar',
   props: {
-    title: String
+    title: {
+        type:String,
+        default:''
+    }
   },
   data () {
     return {
@@ -72,7 +89,7 @@ export default {
 </script>
 <style scoped>
   .uk-navbar{
-        background: #ffffff;
+        background: rgb(97, 159, 232);
         padding-left:20px;
         padding-right:20px;
     }
@@ -83,7 +100,7 @@ export default {
         }
     }
     .uk-text-default{
-        color: #11253E;
+        color: #ffffff;
     }
     .uk-nav-default li a{
         display:block;
@@ -104,7 +121,7 @@ export default {
     }
     .uk-text-big{
         font-size:26px;
-        color:#11253E;
+        color:#ffffff;
     }
     .uk-no-border{
         border:none;
@@ -116,5 +133,41 @@ export default {
     }
     .btn-primary-transparent:hover{
         background: #7bbdf7;
+    }
+    .icon-notify{
+        margin-top:-3px;
+    }
+    .uk-offcanvas-bar{
+        width:340px;
+        padding:0;
+        margin:0;
+    }
+    .notify-heading{
+        padding:20px;
+        padding-top:25px;
+        font-weight:500;
+    }
+    .notify-body{
+        border-bottom: 1px solid #f4f4f4;
+    }
+    .notify-title{
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:15px;
+        font-weight:500;
+        font-size: 15px;
+    }
+    .notify-message{
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:10px;
+        padding-top:10px;
+        font-size: 14px;
+    }
+    .create-btn{
+        font-size:14px;
+        background:rgba(0,0,0,0.18);
+        border:none; color:white;
+        font-weight:500
     }
 </style>

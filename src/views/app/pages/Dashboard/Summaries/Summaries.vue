@@ -5,7 +5,7 @@
               <Summary
                 name="INVITATIONS SENT"
                 value="456"
-                icon="ios-paper-plane"
+                icon="✉️"
                 color="#32D5AA"
                 interpret="600 invitation has been sent this month"
               ></Summary>
@@ -14,7 +14,7 @@
               <Summary
                 name="INVITEES ATTENDING"
                 value="300"
-                icon="ios-paper"
+                icon="🔖"
                 color="#48b0f7"
                 interpret="724 invitation has been sent this month"
               ></Summary>
@@ -23,7 +23,7 @@
               <Summary
                 name="TOTAL VIEWS"
                 value="432"
-                icon="ios-eye"
+                icon="📨"
                 color="#926dde"
                 interpret="724 invitation has been sent this month"
               ></Summary>
@@ -32,7 +32,7 @@
               <Summary
                 name="AMOUNT SPENT"
                 value="GHS 54"
-                icon="ios-card"
+                icon="💳"
                 color="#f96868"
                 interpret="600 invitation has been sent this month"
               ></Summary>

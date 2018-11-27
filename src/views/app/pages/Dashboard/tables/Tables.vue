@@ -7,7 +7,7 @@
                         <div><h5 class="small-heading">Active Events</h5></div>
                         <div> <Button type="text" class="uk-text-primary border-tn padding-bottom-small">View all <Icon type="ios-arrow-forward" /></Button></div>
                     </div>
-                    <hr style="border:1px solid #f7f7f7">
+                    <hr style="border:1px solid #f8f8f8">
                     <div class="uk-overflow-auto">
                         <table class="uk-table uk-table-striped">
                             <thead>
@@ -60,7 +60,7 @@
                         <div><h5 class="small-heading">Live Feedbacks</h5></div>
                         <div><Button type="text" class="uk-text-primary border-tn paddin-bottom-small">View reports <Icon type="ios-arrow-forward" /></Button></div>
                     </div>
-                    <hr style="border:1px solid #f7f7f7">
+                    <hr style="border:1px solid #f8f8f8">
                     <div class="uk-overflow-auto">
                         <table class="uk-table uk-table-striped">
                             <thead>
@@ -74,28 +74,28 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="uk-text-muted"> #E1243 </td>
+                                <td class="uk-text-muted">  <Badge status="success" /> #E1243 </td>
                                 <td> 234 </td>
                                 <td> 190 </td>
                                 <td class="uk-text-success"> 89 </td>
                                 <td class="uk-text-muted"><Icon type="md-sync" /> 2 seconds ago</td>
                             </tr>
                             <tr>
-                                <td class="uk-text-muted"> #E1246 </td>
+                                <td class="uk-text-muted">  <Badge status="success" /> #E1246 </td>
                                 <td> 80 </td>
                                 <td> 76 </td>
                                 <td class="uk-text-success"> 12 </td>
                                 <td class="uk-text-muted"><Icon type="md-sync" /> 52 seconds ago</td>
                             </tr>
                             <tr>
-                                <td class="uk-text-muted"> #E1243 </td>
+                                <td class="uk-text-muted">  <Badge status="warning" /> #E1243 </td>
                                 <td> 2400 </td>
                                 <td> 1800 </td>
                                 <td class="uk-text-success"> 700 </td>
                                 <td class="uk-text-muted"><Icon type="md-sync" /> 25 minutes ago</td>
                             </tr>
                             <tr>
-                                <td class="uk-text-muted"> #E1247 </td>
+                                <td class="uk-text-muted">  <Badge status="success" /> #E1247 </td>
                                 <td> 180 </td>
                                 <td> 90 </td>
                                 <td class="uk-text-success"> 70 </td>

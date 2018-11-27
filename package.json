@@ -18,7 +18,7 @@
     "lodash": "^4.17.11",
     "mfb": "^0.12.0",
     "register-service-worker": "^1.0.0",
-    "uikit": "^3.0.0-rc.23",
+    "uikit": "^3.0.0-dev.f96c139eb",
     "vue": "^2.5.17",
     "vue-axios": "^2.1.4",
     "vue-chartjs": "^3.4.0",

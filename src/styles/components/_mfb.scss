@@ -187,9 +187,7 @@ $number-of-child-buttons: 4 !default;
 \*------------------------------------*/
 
 .mfb-component__button{
-    background: #00c6ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #619fe8, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #619fe8, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(97, 159, 232);  /* fallback for old browsers */
     display: inline-block;
     position: relative;
     border: none;
@@ -290,7 +288,7 @@ $number-of-child-buttons: 4 !default;
 }
 .mfb-component__main-icon--active{
     opacity: 0;
-    color:#fff;
+    color:red;
 }
 [data-mfb-toggle="hover"]:hover,
 [data-mfb-state="open"]{

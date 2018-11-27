@@ -5,7 +5,7 @@
                 <div class="uk-section  uk-border-radius uk-padding-small">
                     <div class="uk-flex uk-flex-center uk-flex-between padding-bottom-small">
                         <div>
-                            <h5 class="padding-left-small small-heading padding-top-small" style="font-size: 16px;">Total Views</h5>
+                            <h5 class="padding-left-small small-heading padding-top-xxsmall" style="font-size: 16px;">Total Views</h5>
                         </div>
                         <div>
                             <Select v-model="model2" style="width:150px; padding-right:5px;" placeholder="Select event">
@@ -24,11 +24,11 @@
                 <div class="uk-section-small uk-border-radius uk-padding-small">
                     <div class="uk-flex uk-flex-center uk-flex-between padding-bottom-small">
                       <div>
-                          <h5 class="padding-left-small small-heading padding-top-small" style="font-size: 16px;">Feedbacks</h5>
+                          <h5 class="padding-left-small small-heading padding-top-xxsmall" style="font-size: 16px;">Feedbacks</h5>
                       </div>
                       <div>
                        <Tooltip content="Active Event" placement="top-start">
-                            <Tag type="dot"  color="success"><span class="uk-text-muted">Current event: </span> Event 3</Tag>
+                            <Tag type="dot"  color="success"><span class="uk-text-muted">Live: </span> Event 3</Tag>
                         </Tooltip>
                       </div>
                     </div>
@@ -53,14 +53,20 @@
         },
         data(){
             return{
+                model2:'',
                 events: [
                     {
                         id: 1,
+                        label: 'All Events',
+                        value: 'All Events'
+                    },
+                    {
+                        id: 2,
                         label: 'General Meeting',
                         value: 'General Meeting'
                     },
                     {
-                        id: 2,
+                        id: 3,
                         label: 'Annual Meeting',
                         value: 'Annual Meeting'
                     }
@@ -99,7 +105,8 @@
 .uk-no-border{
 }
 .small-heading{
-   font-weight:500;
+   font-weight:300;
+   font-size:18px;
 }
 .icon-placement{
    margin-top: -5px;
